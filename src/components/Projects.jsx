@@ -1,11 +1,27 @@
-import React from 'react'
+import ProjectsComponent from "./ProjectsComponent";
+import styles from "../style";
+import projectsItems from "./ProjectsItem";
 
 const Projects = () => {
   return (
-    <div>
-      Projects
-    </div>
-  )
-}
+    <section
+      id="home"
+      className={`flex justify-left md:flex-row flex-col sm:flex-row ${styles.paddingY}`}
+    >
+      <div className="project-list">
+        {projectsItems.map((item) => (
+          <ProjectsComponent
+            key={item.title}
+            imgSrc={item.image}
+            description={item.description}
+            link={item.link}
+            githubLink={item.githubLink}
+          />
+        ))}
+      </div>
 
-export default Projects
+    </section>
+  );
+};
+
+export default Projects;
