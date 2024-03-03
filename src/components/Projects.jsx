@@ -1,16 +1,12 @@
-import ProjectsComponent from "./ProjectsComponent";
-import styles from "../style";
+import ProjectsContainer from "./ProjectsContainer";
 import projectsItems from "./ProjectsItem";
 
 const Projects = () => {
   return (
-    <section
-      id="home"
-      className={`flex justify-left md:flex-row flex-col sm:flex-row ${styles.paddingY}`}
-    >
+
       <div className="project-list">
         {projectsItems.map((item) => (
-          <ProjectsComponent
+          <ProjectsContainer
             key={item.id}
             title={item.title}
             image={item.image}
@@ -20,8 +16,6 @@ const Projects = () => {
           />
         ))}
       </div>
-
-    </section>
   );
 };
 
