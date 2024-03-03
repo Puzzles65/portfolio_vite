@@ -1,19 +1,21 @@
-import React from 'react'
-import projectsItems from './ProjectsItem'
+import React from "react";
 
-function ProjectsComponent() {
-    return (
-        <div>
-        {projectsItems.map(item => (
-            <div className="project-item" key={item.title}>
-                <img src={item.image} alt={item.title} />
-                <p>{item.description}</p>
-                <a href={item.link} target="_blank" rel="noopener noreferrer">Link</a>
-                <a href={item.githubLink} target="_blank" rel="noopener noreferrer">Github</a>
-            </div>
-        ))}
+function ProjectsComponent({ id, title, image, description, link, githubLink }) {
+  return (
+    <div>
+      <div className="project-item" key={id}>
+        <h1>{title}</h1>
+        <img src={image} alt={title} />
+        <p>{description}</p>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          Link
+        </a>
+        <a href={githubLink} target="_blank" rel="noopener noreferrer">
+          Github
+        </a>
+      </div>
     </div>
-    )
+  );
 }
 
-export default ProjectsComponent
+export default ProjectsComponent;

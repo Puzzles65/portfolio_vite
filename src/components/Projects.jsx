@@ -11,8 +11,9 @@ const Projects = () => {
       <div className="project-list">
         {projectsItems.map((item) => (
           <ProjectsComponent
-            key={item.title}
-            imgSrc={item.image}
+            key={item.id}
+            title={item.title}
+            image={item.image}
             description={item.description}
             link={item.link}
             githubLink={item.githubLink}
