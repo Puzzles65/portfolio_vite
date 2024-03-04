@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../style";
-
+import { github, internet } from '../assets'
 // destructuring prop
 
 function ProjectsContainer({
@@ -10,7 +10,6 @@ function ProjectsContainer({
   description,
   link,
   githubLink,
-  icons
 }) {
   return (
     <section id="projects">
@@ -34,20 +33,28 @@ function ProjectsContainer({
             {description}
           </p>
           <a
-            className="text-white font-poppins font-semibold"
+            className="w-[50px] h-[50px] my-10"
             href={link}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Link
+           <img
+          className={`max-w-full w-[50px]`}
+          src={internet}
+          alt="internet"
+        />
           </a>
           <a
-            className="text-white font-poppins font-semibold"
+            className="w-[50px] h-[50px] my-10"
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Github
+                  <img
+          className={`max-w-full w-[50px]`}
+          src={github}
+          alt="github"
+        />
           </a>
         </div>
       </div>
