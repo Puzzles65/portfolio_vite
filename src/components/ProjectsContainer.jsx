@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../style";
-import { github, internet } from '../assets'
+import { github, internet, arrow } from "../assets";
 // destructuring prop
 
 function ProjectsContainer({
@@ -13,13 +13,12 @@ function ProjectsContainer({
 }) {
   return (
     <section id="projects">
-      
       <div
         className="flex justify-left md:flex-row flex-col sm:flex-row"
         key={id}
       >
         <img
-          className={`w-[380px] max-w-full ${styles.paddingY}`}
+          className={`w-[380px] max-w-full sm:h-[500px] max-h-full ${styles.paddingY}`}
           src={image}
           alt={title}
         />
@@ -33,28 +32,29 @@ function ProjectsContainer({
             {description}
           </p>
           <a
-            className="w-[50px] h-[50px] my-10"
+            className="flex flex-row text-white w-[25px] h-[25px] my-5"
             href={link}
             target="_blank"
             rel="noopener noreferrer"
           >
-           <img
-          className={`max-w-full w-[50px]`}
-          src={internet}
-          alt="internet"
-        />
+            <img
+              className="max-w-full w-[25px]"
+              src={internet}
+              alt="internet"
+            />
+            <span className="mx-1">ViewProject</span>
+            <img className="max-w-full w-[25px]"  src={arrow} alt="arrow" />
           </a>
           <a
-            className="w-[50px] h-[50px] my-10"
+            className="flex flex-row text-white w-[50px] h-[25px] my-5"
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
           >
-                  <img
-          className={`max-w-full w-[50px]`}
-          src={github}
-          alt="github"
-        />
+            <img className="max-w-full w-[25px]" src={github} alt="github" />
+            <span className="mx-1">Github</span>
+            <img className="max-w-full w-[25px]" src={arrow} alt="arrow" />
+
           </a>
         </div>
       </div>
