@@ -42,7 +42,7 @@ function ProjectsContainer({
               src={internet}
               alt="internet"
             />
-            <span className="mx-1">ViewProject</span>
+            <span className="mx-1 min-w-24 ">View Project</span>
             <img className="max-w-full w-[25px]"  src={arrow} alt="arrow" />
           </a>
           <a
