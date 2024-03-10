@@ -13,6 +13,9 @@ const styles = {
   
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-16 my-6",
+
+    contactInput: "w-full p-1 outline-none rounded-lg border-2 border-gray-300 focus:border-sky-600",
+    contactText: "text-white font-medium text-xs"
   };
   
   export const layout = {
