@@ -69,7 +69,7 @@ const Contact = () => {
           value={details.message}
           onChange={handleDetailsChange}
           type="text"
-          placeholder="Message.."
+          placeholder="Message..."
         />
       </div>
       <button
