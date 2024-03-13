@@ -3,6 +3,9 @@ import { sendCustomEmail } from "./Email";
 import styles from "../style";
 import ContactLinks from "./ContactLinks";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+
 const Contact = () => {
   const [details, setDetails] = useState({
     from_name: "",
@@ -45,6 +48,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
             chitrungnguyen12@gmail.com
           </a>
           <h2 className="text-gradient mt-2 font-bold">Write Me a Message</h2>
