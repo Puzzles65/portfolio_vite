@@ -26,9 +26,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="flex flex-col w-full sm:w-[500px]">
+    <section id="contact" className="flex flex-col w-full">
       <div className="flex flex-row">
-        <div>
+        <div className="sm:w-1/2">
       <h1 className="text-gradient font-bold">CONTACT</h1>
       <h2 className="text-white">Get in Touch!</h2>
       <h2 className="text-white">
@@ -82,7 +82,7 @@ const Contact = () => {
         />
       </div>
       <button
-        className="mt-5 mb-8 px-6 py-3 cursor-pointer bg-cyan-500 text-white border-none disabled:opacity-50 rounded-lg"
+        className="w-full mt-5 mb-8 px-6 py-3 cursor-pointer bg-cyan-500 text-white border-none disabled:opacity-50 rounded-lg"
         disabled={!details.to_email || !details.subject || !details.message}
         onClick={handleSendEmail}
       >
@@ -90,7 +90,7 @@ const Contact = () => {
       </button>
       </div>
       <div>
-      <img src="https://imgur.com/oeuBtsm.gif" />
+      <img className="hidden sm:block ml-16 mt-16 w-full sm:w-[350px]" src="https://imgur.com/oeuBtsm.gif" />
       </div>
       </div>
     </section>
