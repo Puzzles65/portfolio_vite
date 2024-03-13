@@ -27,6 +27,15 @@ const Contact = () => {
 
   return (
     <section id="contact" className="flex flex-col w-full sm:w-[500px]">
+      <div className="flex flex-row">
+        <div>
+      <h1 className="text-gradient font-bold">CONTACT</h1>
+      <h2 className="text-white">Get in Touch!</h2>
+      <h2 className="text-white">
+        Have a project in mind or just want to say hello? Feel free to drop me a
+        message below! I'm always excited to connect and explore new
+        opportunities. Looking forward to hearing from you!
+      </h2>
       <span className="text-gradient font-bold">Write Me a Message</span>
       <div>
         <span className={`${styles.contactText}`}>Full Name:</span>
@@ -73,12 +82,17 @@ const Contact = () => {
         />
       </div>
       <button
-        className="mt-5 mb-8 px-6 py-3 cursor-pointer bg-indigo-900 text-white border-none disabled:opacity-50 rounded-lg"
+        className="mt-5 mb-8 px-6 py-3 cursor-pointer bg-cyan-500 text-white border-none disabled:opacity-50 rounded-lg"
         disabled={!details.to_email || !details.subject || !details.message}
         onClick={handleSendEmail}
       >
         <span>Send Email</span>
       </button>
+      </div>
+      <div>
+      <img src="https://imgur.com/oeuBtsm.gif" />
+      </div>
+      </div>
     </section>
   );
 };
