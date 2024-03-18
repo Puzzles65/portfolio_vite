@@ -19,8 +19,8 @@ function App() {
 
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          <Skills />
           <Projects />
+          <Skills />
           <About />
           <Contact />
         </div>

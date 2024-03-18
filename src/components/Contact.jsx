@@ -48,10 +48,10 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
+            <FontAwesomeIcon className="mr-1" icon={faEnvelope} />
             chitrungnguyen12@gmail.com
           </a>
-          <h2 className="text-gradient mt-2 font-bold">Write Me a Message</h2>
+          <h2 className="text-gradient text-lg mt-2 font-bold">Write Me a Message</h2>
           <div>
             <span className={`${styles.contactText}`}>Full Name:</span>
             <input
