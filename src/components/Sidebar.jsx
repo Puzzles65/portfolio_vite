@@ -12,7 +12,7 @@ function Sidebar() {
               href={ContactLinks.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white sm:text-5xl"
+              className="text-white text-2xl sm:text-5xl"
             >
               <FaGithub />
             </a>
@@ -22,7 +22,7 @@ function Sidebar() {
               href={ContactLinks.linkedIn}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white sm:text-5xl"
+              className="text-white text-2xl sm:text-5xl"
             >
               <FaLinkedin />
             </a>
@@ -32,7 +32,7 @@ function Sidebar() {
               href={ContactLinks.email}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white sm:text-5xl"
+              className="text-white text-2xl sm:text-5xl"
             >
               <MdOutlineMailOutline />
             </a>

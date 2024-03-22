@@ -51,7 +51,7 @@ const Contact = () => {
             <FontAwesomeIcon className="mr-1" icon={faEnvelope} />
             chitrungnguyen12@gmail.com
           </a>
-          <h2 className="text-gradient text-lg mt-2 font-bold">Write Me a Message</h2>
+          <h2 className="text-gradient text-lg mt-1 font-bold">Write Me a Message</h2>
           <div>
             <span className={`${styles.contactText}`}>Full Name:</span>
             <input
@@ -97,7 +97,7 @@ const Contact = () => {
             />
           </div>
           <button
-            className="w-full mt-5 mb-8 px-6 py-3 cursor-pointer bg-cyan-500 text-white border-none disabled:opacity-50 rounded-lg"
+            className="w-full mt-5 mb-8 px-6 py-3 cursor-pointer bg-blue-gradient text-white border-none disabled:opacity-50 rounded-lg"
             disabled={!details.to_email || !details.subject || !details.message}
             onClick={handleSendEmail}
           >
