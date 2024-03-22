@@ -17,6 +17,8 @@ import { SiPostman } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
+import { MdOutlineMailOutline } from "react-icons/md";
+
 
 
 export {
@@ -39,4 +41,5 @@ export {
   SiTailwindcss,
   MdOutlineWeb,
   FaLinkedin,
+  MdOutlineMailOutline,
 };
