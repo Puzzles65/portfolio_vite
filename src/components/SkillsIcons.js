@@ -16,6 +16,8 @@ import { SiJira } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
+
 
 export {
   FaPython,
@@ -36,4 +38,5 @@ export {
   FaGithub,
   SiTailwindcss,
   MdOutlineWeb,
+  FaLinkedin,
 };
