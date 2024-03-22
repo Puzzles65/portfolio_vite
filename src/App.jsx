@@ -1,6 +1,5 @@
-
-import { Navbar, Home, About, Contact, Projects, Skills } from "./components";
-import styles from './style.js'
+import { Navbar, Home, About, Contact, Projects, Skills, Sidebar } from "./components";
+import styles from "./style.js";
 
 function App() {
   return (
@@ -16,6 +15,7 @@ function App() {
           <Home />
         </div>
       </div>
+      <Sidebar />
 
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
