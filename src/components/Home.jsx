@@ -5,13 +5,13 @@ function Home() {
   return (
     <section
       id="home"
-      className={`flex justify-center md:flex-row flex-col sm:flex-row ${styles.paddingY}`}
+      className={`sm:mb-32 sm:mt-24 flex justify-center md:flex-row flex-col sm:flex-row ${styles.paddingY}`}
     >
-      <div className={`xl:px-0 px-6`}>
+      <div className={`xl:px-0 px-6 mb-8`}>
         <img
           src={photo}
           alt="profile picture"
-          className="w-[280px] max-w-full rounded-lg"
+          className="w-[280px] sm:w-[320px] max-w-full rounded-lg"
         />
       </div>
       <div className={`xl:px-0 px-6`}>
@@ -22,13 +22,13 @@ function Home() {
           <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
           {/* gradient end */}
         </h1>
-        <h2 className="text-gradient ss:text-[45px] text-[30px]">
+        <h2 className="text-gradient ss:text-[55px] text-[30px]">
           I'm Trung, a
         </h2>{" "}
-        <h2 className="text-gradient ss:text-[45px] text-[30px]">
+        <h2 className="text-gradient ss:text-[55px] text-[30px]">
           junior software engineer
         </h2>{" "}
-        <h2 className="text-gradient ss:text-[45px] text-[30px]">
+        <h2 className="text-gradient ss:text-[55px] text-[30px]">
           based in London.
         </h2>{" "}
       </div>

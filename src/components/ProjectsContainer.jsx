@@ -1,6 +1,6 @@
-import React from "react";
 import styles from "../style";
-import { github, internet, arrow } from "../assets";
+import { arrow } from "../assets";
+import { FaGithub, MdOutlineWeb } from "./SkillsIcons";
 // destructuring prop
 
 function ProjectsContainer({
@@ -12,9 +12,9 @@ function ProjectsContainer({
   githubLink,
 }) {
   return (
-    <section id="projects">
+    <section >
       <div
-        className="flex justify-left md:flex-row flex-col sm:flex-row"
+        className="flex justify-left md:flex-row flex-col sm:flex-row sm:ml-16 sm:mr-16"
         key={id}
       >
         <img
@@ -32,29 +32,28 @@ function ProjectsContainer({
             {description}
           </p>
           <a
-            className="flex flex-row text-white w-[25px] h-[25px] my-5"
+            className={`flex flex-row py-4 px-6 text-primary bg-blue-gradient rounded-[10px] outline-none ${styles} z-10 mb-2`}
             href={link}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className="max-w-full w-[25px]"
-              src={internet}
-              alt="internet"
-            />
-            <span className="mx-1 min-w-24 ">View Project</span>
-            <img className="max-w-full w-[25px]"  src={arrow} alt="arrow" />
+            <MdOutlineWeb className="text-2xl" />
+            <span className="mx-1 font-poppins font-medium text-[18px]">
+              View Project
+            </span>
+            <img className="max-w-full w-[25px]" src={arrow} alt="arrow" />
           </a>
           <a
-            className="flex flex-row text-white w-[50px] h-[25px] my-5"
+            className={`flex flex-row py-4 px-6 text-primary bg-blue-gradient rounded-[10px] outline-none ${styles}`}
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="max-w-full w-[25px]" src={github} alt="github" />
-            <span className="mx-1">Github</span>
+            <FaGithub className="text-2xl" />
+            <span className="mx-1 font-poppins font-medium text-[18px]">
+              Github
+            </span>
             <img className="max-w-full w-[25px]" src={arrow} alt="arrow" />
-
           </a>
         </div>
       </div>

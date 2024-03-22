@@ -29,7 +29,7 @@ const SkillItem = ({ Icon, text }) => (
 
 const Skills = () => {
   return (
-    <section id="skills" className="flex flex-col">
+    <section id="skills" className="flex flex-col mt-16 mb-16">
       <h1 className="text-gradient text-center text-2xl font-bold mb-16">SKILLS</h1>
 
       <div className="sm:flex flex-row justify-evenly">

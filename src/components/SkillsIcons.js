@@ -1,7 +1,7 @@
 import { FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5 } from "react-icons/fa";
-
+import { MdOutlineWeb } from "react-icons/md";
 import { DiPostgresql } from "react-icons/di";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiMongodb } from "react-icons/si";
@@ -35,4 +35,5 @@ export {
   SiPostman,
   FaGithub,
   SiTailwindcss,
+  MdOutlineWeb,
 };
