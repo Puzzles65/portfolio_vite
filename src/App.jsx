@@ -1,5 +1,14 @@
-import { Navbar, Home, About, Contact, Projects, Skills, Sidebar } from "./components";
+import {
+  Navbar,
+  Home,
+  About,
+  Contact,
+  Projects,
+  Skills,
+  Sidebar,
+} from "./components";
 import styles from "./style.js";
+import ScrollTop from "./components/ScrollTop.jsx";
 
 function App() {
   return (
@@ -15,7 +24,6 @@ function App() {
           <Home />
         </div>
       </div>
-      <Sidebar />
 
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
@@ -25,6 +33,8 @@ function App() {
           <Contact />
         </div>
       </div>
+      <Sidebar />
+      <ScrollTop />
     </div>
   );
 }

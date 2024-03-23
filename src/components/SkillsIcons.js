@@ -18,6 +18,8 @@ import { FaGithub } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { FaArrowAltCircleUp } from "react-icons/fa";
+
 
 
 
@@ -42,4 +44,5 @@ export {
   MdOutlineWeb,
   FaLinkedin,
   MdOutlineMailOutline,
+  FaArrowAltCircleUp,
 };

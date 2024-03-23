@@ -22,6 +22,7 @@ function ProjectsContainer({
           src={image}
           alt={title}
         />
+
         <div
           className={`flex flex-col ${styles.paddingY} ${styles.paddingX} pl-0 sm:pl-5`}
         >
