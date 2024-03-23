@@ -1,5 +1,5 @@
 import {useState} from 'react'; 
-import {FaArrowAltCircleUp} from "./SkillsIcons"; 
+import {IoIosArrowUp} from "./SkillsIcons"; 
 import { Button } from './Styles'; 
 
 const ScrollTop = () =>{ 
@@ -27,7 +27,7 @@ window.addEventListener('scroll', toggleVisible);
 
 return ( 
 	<Button> 
-	<FaArrowAltCircleUp onClick={scrollToTop} 
+	<IoIosArrowUp onClick={scrollToTop} 
 	style={{display: visible ? 'inline' : 'none'}} /> 
 	</Button> 
 ); 
