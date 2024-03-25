@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="flex flex-col w-full">
+    <section id="contact" className={`flex flex-col w-full sm:${styles.paddingX}`}>
       <div className="text-center mb-16">
         <h1 className="text-gradient text-2xl font-bold">CONTACT</h1>
         <h2 className="text-white">Get in Touch!</h2>

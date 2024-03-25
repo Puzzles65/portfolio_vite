@@ -5,7 +5,7 @@ function Home() {
   return (
     <section
       id="home"
-      className={`sm:mb-32 sm:mt-24 flex justify-center md:flex-row flex-col sm:flex-row ${styles.paddingY}`}
+      className={`sm:mb-32 sm:mt-24 sm:border-t sm:border-b sm:border-cyan-500 flex justify-center md:flex-row flex-col sm:flex-row ${styles.paddingY}`}
     >
       <div className={`xl:px-0 px-6 mb-8`}>
         <img
@@ -15,7 +15,7 @@ function Home() {
         />
       </div>
       <div className={`xl:px-0 px-6`}>
-        <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[80px] leading-[75px]">
+        <h1 className="flex-1 font-poppins sm:border-b font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[80px] leading-[75px]">
           Hello! <br className="sm:block hidden" /> {/* gradient start */}
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[10%] h-[80%] rounded-full white__gradient bottom-40" />
