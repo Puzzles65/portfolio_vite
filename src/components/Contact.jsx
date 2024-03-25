@@ -3,7 +3,7 @@ import { sendCustomEmail } from "./Email";
 import styles from "../style";
 import ContactLinks from "./ContactLinks";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const Contact = () => {
@@ -30,7 +30,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className={`flex flex-col w-full sm:${styles.paddingX}`}>
+    <section
+      id="contact"
+      className={`flex flex-col w-full sm:${styles.paddingX}`}
+    >
       <div className="text-center mb-16">
         <h1 className="text-gradient text-2xl font-bold">CONTACT</h1>
         <h2 className="text-white">Get in Touch!</h2>
@@ -51,7 +54,9 @@ const Contact = () => {
             <FontAwesomeIcon className="mr-1" icon={faEnvelope} />
             chitrungnguyen12@gmail.com
           </a>
-          <h2 className="text-gradient text-lg mt-1 font-bold">Write Me a Message</h2>
+          <h2 className="text-gradient text-lg mt-1 font-bold">
+            Write Me a Message
+          </h2>
           <div>
             <span className={`${styles.contactText}`}>Full Name:</span>
             <input
@@ -97,7 +102,7 @@ const Contact = () => {
             />
           </div>
           <button
-            className="w-full mt-5 mb-8 px-6 py-3 cursor-pointer bg-blue-gradient text-white border-none disabled:opacity-50 rounded-lg"
+            className="w-full mt-5 mb-8 px-6 py-3 bg-blue-gradient text-white disabled:opacity-50 rounded-lg border border-transparent hover:border-black"
             disabled={!details.to_email || !details.subject || !details.message}
             onClick={handleSendEmail}
           >

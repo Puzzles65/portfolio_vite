@@ -44,7 +44,7 @@ function ProjectsContainer({
       </div>
       <div className="flex flex-row sm:ml-16">
         <a
-          className={`flex flex-row py-4 px-6 justify-center text-primary bg-blue-gradient rounded-[10px] outline-none ${styles} z-10 mr-4 w-[420px]`}
+          className={`flex flex-row py-4 px-6 justify-center bg-blue-gradient rounded-[10px] outline-none ${styles} z-10 mr-4 w-[420px] border border-transparent hover:border-black`}
           href={link}
           target="_blank"
           rel="noopener noreferrer"
@@ -56,7 +56,7 @@ function ProjectsContainer({
           <img className="max-w-full w-[25px]" src={arrow} alt="arrow" />
         </a>
         <a
-          className={`flex flex-row  justify-center py-4 px-6 text-primary bg-blue-gradient rounded-[10px] outline-none ${styles} w-[420px]`}
+          className={`flex flex-row justify-center py-4 px-6 bg-blue-gradient rounded-[10px] outline-none ${styles} w-[420px] border border-transparent hover:border-black`}
           href={githubLink}
           target="_blank"
           rel="noopener noreferrer"
@@ -66,6 +66,7 @@ function ProjectsContainer({
             Github
           </span>
           <img className="max-w-full w-[25px]" src={arrow} alt="arrow" />
+          
         </a>
       </div>
     </section>
